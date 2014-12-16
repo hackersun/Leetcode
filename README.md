@@ -7,7 +7,6 @@ Leetcode
 hackersun<br>
 2014.12.8<br>
 <br>
-=========
 <br>PS：第一遍的代码在这里：
 <br>http://blog.csdn.net/doc_sgl
 <br>
@@ -15,6 +14,6 @@ hackersun<br>
 <br>
 <br>
 <br>Contact:
-========
+<br>Author:Guoli Sun
 <br>https://www.linkedin.com/in/sunguoli
 <br>hackersungl@gmail.com
