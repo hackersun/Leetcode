@@ -7,13 +7,14 @@ Leetcode
 hackersun<br>
 2014.12.8<br>
 <br>
-<br>
+=========
 <br>PS：第一遍的代码在这里：
 <br>http://blog.csdn.net/doc_sgl
 <br>
 <br>
 <br>
 <br>
-<br>git add .
-<br>git commit -m "first_commit"
-<br>git push origin master
+========
+Contact:
+https://www.linkedin.com/in/sunguoli
+hackersungl@gmail.com
