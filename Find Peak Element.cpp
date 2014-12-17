@@ -21,3 +21,16 @@ int findPeakElement(const vector<int> &num) {//smart O(n), compare n times.
         }
         return num.size()-1;
     }
+
+int findPeakElement(const vector<int> &num) {//O(logN)
+        int left=0,right=num.size()-1;
+        while(left<=right){
+            if(left==right)
+                return left;
+            int mid=(left+right)/2;
+            if(num[mid]<num[mid+1])
+                left=mid+1;
+            else
+                right=mid;
+        }
+    }
