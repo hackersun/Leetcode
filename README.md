@@ -1,6 +1,6 @@
 Leetcode
 ========
-<br>第二遍做Leetcode,并且是时隔半年没写代码之后。。
+<br>第二遍做Leetcode。。
 <br>新的开始，再次出发~
 <br>我的征途是星辰大海~
 <br>
