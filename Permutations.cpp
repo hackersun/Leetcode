@@ -11,7 +11,7 @@ void permuteHelper(vector<int> num, int i, vector<vector<int>> &res)
 	}
 }
 
-vector<vector<int>> permute(vector<int> &num) {
+vector<vector<int>> permute(vector<int> &num) {//backtracking
         vector<vector<int>> res;
 		permuteHelper(num, 0, res);
 		return res;
