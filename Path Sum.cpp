@@ -9,7 +9,7 @@
  */
 class Solution {
 public:
-    bool hasPathSumHelper(TreeNode* root, int sum, int currentSum)
+bool hasPathSumHelper(TreeNode* root, int sum, int currentSum)
 {
 	currentSum += root->val;
 
@@ -24,9 +24,9 @@ public:
 		|| hasPathSumHelper(root->right, sum, currentSum);
 }
 bool hasPathSum(TreeNode *root, int sum) {//recursive
-		if(root == NULL) return false;
-		return hasPathSumHelper(root, sum, 0);
-    }
+	if(root == NULL) return false;
+	return hasPathSumHelper(root, sum, 0);
+}
 };
 
 //deep first search
