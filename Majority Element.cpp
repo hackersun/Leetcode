@@ -32,3 +32,25 @@ public:
 		return max;
     }
 };
+
+class Solution {
+public:
+    int majorityElement(vector<int> &num) {//method 2 optimize
+        map<int, int> mp;
+		map<int, int>::iterator it;
+		for(int i = 0; i < num.size(); i++)
+		{
+			it = mp.find(num[i]);
+			if(it == mp.end()){
+				mp[num[i]] = 1;
+				if(1 > num.size()/2)
+					return num[i];
+			}
+			else{
+				it->second += 1;
+				if(it->second > num.size()/2)
+					return it->first;
+			}
+		}
+    }
+};
