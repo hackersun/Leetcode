@@ -18,3 +18,17 @@ public:
 		return false;
     }
 };
+
+class Solution {//method 2
+public:
+    bool canJump(int A[], int n) {
+        if(A == NULL || n < 2) return true;
+		int jump = 0;
+		for(int i = 0; i < n-1; i++, jump--)
+		{
+			jump = max(jump, A[i]);
+			if(jump <= 0) return false;
+		}
+		return true;
+    }
+};
