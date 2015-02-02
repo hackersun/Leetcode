@@ -30,3 +30,33 @@ public:
 		return min;
 	}
 };
+
+//O(n)
+class Solution {
+public:
+int minimumTotal(vector<vector<int> > &triangle) {
+	int rows = triangle.size();
+	int cols = triangle[rows - 1].size();
+
+	int* matrix = new int[rows];
+
+	matrix[0] = triangle[0][0];
+	for (int i = 1; i < rows; i++)
+		for (int j = i; j >= 0; j--) {
+			if (j == 0)
+				matrix[0] = matrix[0] + triangle[i][0];
+			else if (j == i)
+				matrix[j] = matrix[j - 1] + triangle[i][j];
+			else
+				matrix[j] = min(matrix[j - 1], matrix[j]) + triangle[i][j];
+		}
+	int min = matrix[0];
+	for (int i = 0; i < rows; i++)
+		if (matrix[i] < min)
+			min = matrix[i];
+
+	delete matrix;
+
+	return min;
+}
+};
